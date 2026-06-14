@@ -41,7 +41,7 @@ export const Location: React.FC = () => {
           <div className="absolute inset-0 bg-espresso/40 pointer-events-none" />
           
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-espresso p-6 rounded-sm shadow-2xl border border-caramel/20 text-center min-w-[250px]">
-            <h4 className="text-cream font-serif text-2xl mb-2">RAMRO MOMO</h4>
+            <h4 className="text-cream font-serif text-2xl mb-2">25 MAIN STREET CAFE</h4>
             <p className="text-caramel text-sm uppercase tracking-widest">We are here</p>
           </div>
         </motion.div>

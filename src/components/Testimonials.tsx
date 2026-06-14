@@ -16,7 +16,7 @@ export const Testimonials: React.FC = () => {
         >
           <span className="text-caramel text-6xl font-serif leading-none block mb-6">"</span>
           <h3 className="text-3xl md:text-5xl text-cream font-serif leading-relaxed mb-10">
-            Ramro Momo doesn't just serve food. They serve an experience—an oasis of calm in the middle of a chaotic city.
+            25 Main Street Cafe doesn't just serve food. They serve an experience—an oasis of calm in the middle of a chaotic city.
           </h3>
           <p className="text-sm text-caramel uppercase tracking-widest font-semibold">
             — The Daily Cuppa

@@ -37,9 +37,9 @@ export const Preloader: React.FC = () => {
               animate={{ y: 0 }}
               exit={{ y: "-100%", opacity: 0 }}
               transition={{ duration: 1.2, ease: [0.76, 0, 0.24, 1] }}
-              className="text-4xl md:text-6xl text-caramel font-serif tracking-widest uppercase"
+              className="text-2xl sm:text-3xl md:text-5xl text-caramel font-serif tracking-widest uppercase text-center px-4"
             >
-              Ramro Momo
+              25 Main Street Cafe
             </motion.h1>
           </div>
         </motion.div>
