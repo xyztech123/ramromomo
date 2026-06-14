@@ -1,11 +1,11 @@
 import type { CafeInfo } from '../types';
 
 export const cafeInfo: CafeInfo = {
-  name: "Motherland Cafe",
+  name: "Cup eBong Cafe",
   tagline: "Slow down. Sip. Savor.",
   address: "123 Artisanal Ave, Seattle, WA 98101",
   phone: "+1 (555) 019-8234",
-  email: "hello@25mainstreetcafe.com",
+  email: "hello@cupebongcafe.com",
   hours: {
     weekdays: "7:00 AM - 6:00 PM",
     weekends: "8:00 AM - 7:00 PM"

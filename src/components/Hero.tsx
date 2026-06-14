@@ -95,7 +95,7 @@ export const Hero: React.FC = () => {
           </motion.h2>
 
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif text-cream mb-8 leading-tight flex flex-col items-center text-center">
-            {["Motherland", "Cafe"].map((word, idx) => (
+            {["Cup eBong", "Cafe"].map((word, idx) => (
               <span key={idx} className="overflow-hidden block py-1">
                 <motion.span
                   className="block"
