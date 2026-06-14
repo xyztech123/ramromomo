@@ -1,7 +1,7 @@
 import type { CafeInfo } from '../types';
 
 export const cafeInfo: CafeInfo = {
-  name: "25 Main Street Cafe",
+  name: "Motherland Cafe",
   tagline: "Slow down. Sip. Savor.",
   address: "123 Artisanal Ave, Seattle, WA 98101",
   phone: "+1 (555) 019-8234",

@@ -8,12 +8,12 @@ export const Hero: React.FC = () => {
     target: ref,
     offset: ["start start", "end start"]
   });
-  
+
   // Crazy aesthetic scroll effects
   const scaleBg = useTransform(scrollYProgress, [0, 1], [1, 1.4]);
   const opacityBg = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
   const blurOpacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
-  
+
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const opacityText = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
   const scaleText = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
@@ -52,8 +52,8 @@ export const Hero: React.FC = () => {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0 bg-espresso">
           <motion.div
-            style={{ 
-              scale: scaleBg, 
+            style={{
+              scale: scaleBg,
               opacity: opacityBg,
               willChange: "transform, opacity"
             }}
@@ -63,13 +63,13 @@ export const Hero: React.FC = () => {
             transition={{ duration: 2.5, delay: 1.5, ease: [0.16, 1, 0.3, 1] }}
           >
             {/* Sharp Base Layer */}
-            <div 
+            <div
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: "url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=2000')" }}
             />
             {/* Blurred Layer (fades in for hardware-accelerated blur effect on desktop) */}
             <motion.div
-              style={{ 
+              style={{
                 opacity: blurOpacity,
                 willChange: "opacity",
                 backgroundImage: "url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=2000')"
@@ -87,15 +87,15 @@ export const Hero: React.FC = () => {
           initial="hidden"
           animate="visible"
         >
-          <motion.h2 
+          <motion.h2
             variants={itemVariants}
             className="text-caramel font-semibold tracking-[0.2em] uppercase text-sm md:text-base mb-6"
           >
             Welcome to
           </motion.h2>
-          
+
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif text-cream mb-8 leading-tight flex flex-col items-center text-center">
-            {["25 Main Street", "Cafe"].map((word, idx) => (
+            {["Motherland", "Cafe"].map((word, idx) => (
               <span key={idx} className="overflow-hidden block py-1">
                 <motion.span
                   className="block"
@@ -120,7 +120,7 @@ export const Hero: React.FC = () => {
         </motion.div>
 
         {/* Scroll indicator */}
-        <motion.div 
+        <motion.div
           className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, y: 0 }}
