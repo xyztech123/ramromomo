@@ -39,7 +39,7 @@ export const Preloader: React.FC = () => {
               transition={{ duration: 1.2, ease: [0.76, 0, 0.24, 1] }}
               className="text-2xl sm:text-3xl md:text-5xl text-caramel font-serif tracking-widest uppercase text-center px-4"
             >
-              Art Cafe
+              Balck Brick Cafe
             </motion.h1>
           </div>
         </motion.div>
